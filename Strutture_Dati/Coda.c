@@ -75,6 +75,11 @@ void DeQueue(Coda* Queue)
 
 void printQueue(Coda* Queue)
 {
+    if(isEmpty(Queue)){
+        fprintf(stderr, "Errore: La Coda è vuota.\n");
+        exit(EXIT_FAILURE);
+    }
+    
     Nodo* tmp = Queue->head;
     while(tmp != NULL){
         printf("%d ", tmp->data);
