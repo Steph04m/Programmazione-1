@@ -48,8 +48,7 @@ void EnQueue(Coda* Queue, int n)
     newnode->data = n;
     newnode->next = NULL;
     if(Queue->tail == NULL){
-        Queue->head = newnode;
-        Queue->tail = newnode;
+        Queue->head = Queue->tail = newnode;
     } else {
         Queue->tail->next = newnode;
         Queue->tail = newnode;
@@ -65,7 +64,11 @@ void DeQueue(Coda* Queue)
     }
 
     Nodo* tmp = Queue->head;
-    Queue->head = Queue->head->next;
+    if(Queue->head == Queue->tail){
+        Queue->head = Queue->tail = NULL;
+    } else {
+        Queue->head = Queue->head->next;
+    }
     free(tmp);
     Queue->size--;
 }
