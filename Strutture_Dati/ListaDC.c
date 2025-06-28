@@ -111,6 +111,11 @@ void Remove(Lista* list, int n)
 
 void printList(Lista* list)
 {
+    if(isEmpty(list)){
+        fprintf(stderr, "Errore: La lista è vuota.\n");
+        exit(EXIT_FAILURE);
+    }
+    
     Nodo* tmp = list->head;
     while(tmp != NULL){   
         printf("%d ", tmp->data);
