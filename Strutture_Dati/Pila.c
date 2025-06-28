@@ -70,6 +70,11 @@ void Pop(Pila* Stack)
 
 void printStack(Pila* Stack)
 {
+    if(isEmpty(Stack)){
+        fprintf(stderr, "La Pila è vuota.");
+        exit(EXIT_FAILURE);
+    }
+    
     Nodo* tmp = Stack->head;
     while(tmp != NULL){
         printf("%d ", tmp->data);
