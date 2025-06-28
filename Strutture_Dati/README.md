@@ -3,3 +3,6 @@ Implementazioni in C delle Strutture Dati affrontate nel corso di Programmazione
 - Code;
 - Liste Singolarmente Concatenate;
 - Liste Doppiamente Concatenate;
+
+N.B.: Per semplicità, ogni struttura dati implementata qui è di Interi. Con piccole modifiche si può
+adattare a qualsiasi tipo.
