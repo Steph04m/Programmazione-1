@@ -1,4 +1,4 @@
-Implementazioni in C delle Strutture Dati affrontate nel corso di Programmazione 1, ovvero:
+Implementazioni in C delle Strutture Dati trattate nel corso di Programmazione 1, ovvero:
 - Pile;
 - Code;
 - Liste Singolarmente Concatenate;
